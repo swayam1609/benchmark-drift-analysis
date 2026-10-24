@@ -127,25 +127,25 @@ The benchmark file contains an observation dated 23 October 2026, while the alig
 
 For either the fund or benchmark, the daily simple return is:
 
-\[
+$$
 r_t = \frac{P_t}{P_{t-1}} - 1
-\]
+$$
 
-where \(P_t\) represents the NAV or TRI level on date \(t\).
+where $P_t$ represents the NAV or TRI level on date $t$.
 
 ### 5.2 Daily active return
 
 Daily active return measures the fund's return relative to its benchmark:
 
-\[
+$$
 a_t = r_{f,t} - r_{b,t}
-\]
+$$
 
 where:
 
-- \(r_{f,t}\) is the fund's daily return.
-- \(r_{b,t}\) is the benchmark's daily return.
-- \(a_t\) is the daily active return.
+- $r_{f,t}$ is the fund's daily return.
+- $r_{b,t}$ is the benchmark's daily return.
+- $a_t$ is the daily active return.
 
 A negative active return means the fund underperformed the benchmark on that observation; a positive active return means it outperformed.
 
@@ -153,15 +153,15 @@ A negative active return means the fund underperformed the benchmark on that obs
 
 Cumulative return compounds daily returns over the selected period:
 
-\[
+$$
 R_{\mathrm{cum}} = \prod_{t=1}^{T}(1+r_t)-1
-\]
+$$
 
 The cumulative return gap is:
 
-\[
+$$
 G = R_{f,\mathrm{cum}} - R_{b,\mathrm{cum}}
-\]
+$$
 
 The gap is reported in percentage points when both cumulative returns are expressed as percentages.
 
@@ -171,11 +171,11 @@ This absolute difference is distinct from the relative wealth gap, which compare
 
 Tracking error measures the variability of active returns. In this project, it is calculated using the sample standard deviation of daily active returns and a 252-trading-day annualization convention:
 
-\[
+$$
 TE_{\mathrm{ann}} = s(a_t)\sqrt{252}
-\]
+$$
 
-where \(s(a_t)\) is the sample standard deviation of daily active returns.
+where $s(a_t)$ is the sample standard deviation of daily active returns.
 
 Tracking error is not the same as cumulative underperformance. A fund can have a small cumulative return gap and still experience varying daily active returns.
 
@@ -183,11 +183,11 @@ Tracking error is not the same as cumulative underperformance. A fund can have a
 
 The implemented information ratio is:
 
-\[
-IR = \frac{252\,\bar{a}}{TE_{\mathrm{ann}}}
-\]
+$$
+IR = \frac{252\bar{a}}{TE_{\mathrm{ann}}}
+$$
 
-where \(\bar{a}\) is mean daily active return.
+where $\bar{a}$ is mean daily active return.
 
 This convention annualizes mean daily active return arithmetically and divides it by annualized tracking error. The ratio should be interpreted in the context of the selected period and methodology.
 
@@ -195,9 +195,9 @@ This convention annualizes mean daily active return arithmetically and divides i
 
 The project calculates tracking error over a rolling window of 60 aligned daily return observations:
 
-\[
+$$
 TE_{t,60} = s(a_{t-59},\ldots,a_t)\sqrt{252}
-\]
+$$
 
 A rolling value is available only when the full 60-observation window is populated.
 
