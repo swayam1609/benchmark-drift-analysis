@@ -1,0 +1,13 @@
+metric,value
+start_date,2025-10-27
+end_date,2026-10-22
+valid_daily_returns,244
+fund_cumulative_return,-0.11175189784028838
+benchmark_cumulative_return,-0.11091612575850474
+cumulative_return_gap,-0.0008357720817836478
+relative_wealth_gap,-0.0009400373867951561
+mean_daily_active_return,-3.931130982684449e-06
+annualized_mean_active_return,-0.0009906450076364811
+annualized_tracking_error,0.0005726764786930155
+information_ratio,-1.729851049404665
+maximum_absolute_daily_active_return,0.00025108925842443064

@@ -1,0 +1,54 @@
+
+FILTERED FUND NAV
+--------------------------------------------------
+Rows: 260
+Missing dates: 0
+Missing values: 0
+Duplicate dates: 0
+First date: 2025-10-01
+Last date: 2026-10-22
+First level: 16.357000
+Last level: 15.094000
+All levels are positive.
+
+BENCHMARK TRI
+--------------------------------------------------
+Rows: 247
+Missing dates: 0
+Missing values: 0
+Duplicate dates: 0
+First date: 2025-10-24
+Last date: 2026-10-23
+First level: 38783.540000
+Last level: 34351.790000
+All levels are positive.
+
+ALIGNED DATA CHECKS
+--------------------------------------------------
+Aligned rows: 245
+Duplicate aligned dates: 0
+NAV level mismatches: 0
+TRI level mismatches: 0
+Fund return mismatches: 0
+Benchmark return mismatches: 0
+
+CUMULATIVE RETURN RECONCILIATION
+--------------------------------------------------
+Fund compounded daily returns: -11.17518978%
+Fund first-to-last NAV return: -11.17518978%
+TRI compounded daily returns: -11.09161258%
+TRI first-to-last level return: -11.09161258%
+
+DAILY RETURN EXTREMES
+--------------------------------------------------
+Minimum fund daily return: -3.2620%
+Maximum fund daily return: 3.7814%
+Minimum TRI daily return: -3.2620%
+Maximum TRI daily return: 3.7783%
+
+REVIEW FLAGS
+--------------------------------------------------
+PASS: Aligned levels match source data.
+PASS: Stored returns match recomputed returns.
+PASS: Fund cumulative return reconciles.
+PASS: TRI cumulative return reconciles.

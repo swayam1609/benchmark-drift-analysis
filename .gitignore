@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE and operating system
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Environment variables and secrets
+.env
+.env.*
+
+# Temporary and log files
+*.log
+.pytest_cache/
+
+# Raw data: review redistribution permissions before publishing
+data/raw/
+
+# Generated Excel output can be regenerated
+# Uncomment the next line if you do not want to publish the workbook
+# excel/benchmark_drift_analysis.xlsx
